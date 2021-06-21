@@ -1,0 +1,79 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 11.0 Build 157 04/27/2011 SJ Web Edition
+# Date created = 17:23:16  March 29, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		pwm_top_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C70F896C6
+set_global_assignment -name TOP_LEVEL_ENTITY pwm_top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 11.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:23:16  MARCH 29, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION 11.0
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 896
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_AA23 -to duty[0]
+set_location_assignment PIN_AB26 -to duty[1]
+set_location_assignment PIN_AB25 -to duty[2]
+set_location_assignment PIN_AC27 -to duty[3]
+set_location_assignment PIN_AC26 -to duty[4]
+set_location_assignment PIN_AC24 -to duty[5]
+set_location_assignment PIN_AC23 -to duty[6]
+set_location_assignment PIN_AD24 -to duty[7]
+set_location_assignment PIN_C30 -to pwm
+set_location_assignment PIN_AD15 -to clk
+set_location_assignment PIN_T29 -to clr
+set_global_assignment -name VHDL_FILE pwmiki.vhd
+set_global_assignment -name VHDL_FILE pwm_top.vhd
+set_global_assignment -name VHDL_FILE pwm.vhd
+set_global_assignment -name VHDL_FILE clk64khz.vhd
+set_location_assignment PIN_C29 -to pwmiki
+set_location_assignment PIN_L8 -to dutyiki[0]
+set_location_assignment PIN_L7 -to dutyiki[1]
+set_location_assignment PIN_L4 -to dutyiki[2]
+set_location_assignment PIN_L5 -to dutyiki[3]
+set_location_assignment PIN_T9 -to dutyiki[4]
+set_location_assignment PIN_U9 -to dutyiki[5]
+set_location_assignment PIN_V10 -to dutyiki[6]
+set_location_assignment PIN_W5 -to dutyiki[7]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
