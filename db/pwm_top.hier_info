@@ -1,0 +1,123 @@
+|pwm_top
+clr => pwm:Pulse.clr
+clr => pwmiki:Pulseiki.clr
+clk => clk64khz:clk_div.clk
+duty[0] => pwm:Pulse.duty[0]
+duty[1] => pwm:Pulse.duty[1]
+duty[2] => pwm:Pulse.duty[2]
+duty[3] => pwm:Pulse.duty[3]
+duty[4] => pwm:Pulse.duty[4]
+duty[5] => pwm:Pulse.duty[5]
+duty[6] => pwm:Pulse.duty[6]
+duty[7] => pwm:Pulse.duty[7]
+dutyiki[0] => pwmiki:Pulseiki.dutyiki[0]
+dutyiki[1] => pwmiki:Pulseiki.dutyiki[1]
+dutyiki[2] => pwmiki:Pulseiki.dutyiki[2]
+dutyiki[3] => pwmiki:Pulseiki.dutyiki[3]
+dutyiki[4] => pwmiki:Pulseiki.dutyiki[4]
+dutyiki[5] => pwmiki:Pulseiki.dutyiki[5]
+dutyiki[6] => pwmiki:Pulseiki.dutyiki[6]
+dutyiki[7] => pwmiki:Pulseiki.dutyiki[7]
+
+
+|pwm_top|clk64kHz:clk_div
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => temporal.CLK
+reset => counter[0].ACLR
+reset => counter[1].ACLR
+reset => counter[2].ACLR
+reset => counter[3].ACLR
+reset => counter[4].ACLR
+reset => counter[5].ACLR
+reset => counter[6].ACLR
+reset => counter[7].ACLR
+reset => counter[8].ACLR
+reset => counter[9].ACLR
+reset => counter[10].ACLR
+reset => counter[11].ACLR
+reset => counter[12].ACLR
+reset => temporal.ACLR
+
+
+|pwm_top|pwm:Pulse
+clr => count[0].ACLR
+clr => count[1].ACLR
+clr => count[2].ACLR
+clr => count[3].ACLR
+clr => count[4].ACLR
+clr => count[5].ACLR
+clr => count[6].ACLR
+clr => count[7].ACLR
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+duty[0] => LessThan0.IN8
+duty[1] => LessThan0.IN7
+duty[2] => LessThan0.IN6
+duty[3] => LessThan0.IN5
+duty[4] => LessThan0.IN4
+duty[5] => LessThan0.IN3
+duty[6] => LessThan0.IN2
+duty[7] => LessThan0.IN1
+period[0] => Add0.IN16
+period[1] => Add0.IN15
+period[2] => Add0.IN14
+period[3] => Add0.IN13
+period[4] => Add0.IN12
+period[5] => Add0.IN11
+period[6] => Add0.IN10
+period[7] => Add0.IN9
+
+
+|pwm_top|pwmiki:Pulseiki
+clr => count[0].ACLR
+clr => count[1].ACLR
+clr => count[2].ACLR
+clr => count[3].ACLR
+clr => count[4].ACLR
+clr => count[5].ACLR
+clr => count[6].ACLR
+clr => count[7].ACLR
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+dutyiki[0] => LessThan0.IN8
+dutyiki[1] => LessThan0.IN7
+dutyiki[2] => LessThan0.IN6
+dutyiki[3] => LessThan0.IN5
+dutyiki[4] => LessThan0.IN4
+dutyiki[5] => LessThan0.IN3
+dutyiki[6] => LessThan0.IN2
+dutyiki[7] => LessThan0.IN1
+periodiki[0] => Add0.IN16
+periodiki[1] => Add0.IN15
+periodiki[2] => Add0.IN14
+periodiki[3] => Add0.IN13
+periodiki[4] => Add0.IN12
+periodiki[5] => Add0.IN11
+periodiki[6] => Add0.IN10
+periodiki[7] => Add0.IN9
+
+
